@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+/* header styles start */
+.headerBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.menuBlock {
+    position: relative;
+}
+.hamburger {
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 4px 0;
+}
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    min-width: 200px;
+}
+.linksBlock {
+    padding: 0;
+}
+.subMenu {
+    display: none;
+    padding-left: 30px;
+}
+.open {
+    display: block;
+}
+.subLink>a::before {
+    content: "\25be";
+    position: absolute;
+    right: 10px;
+}
+.arrowOpen a::before {
+    transform: rotate(180deg);
+}
+.link {
+    list-style: none;
+}
+.link a {
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+.link a:hover {
+    background-color: lightblue;
+}
+/* header styles end */
